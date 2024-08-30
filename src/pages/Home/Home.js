@@ -28,6 +28,7 @@ import News from "../../assets/home/news";
 import Media from "react-media";
 import Navbar from "../../components/NavbarNew/Navbar";
 import LOGO from '../../assets/home/hero/logo.jpg'
+import BarWave1 from "react-cssfx-loading/lib/FadingBalls";
 import { useHistory } from "react-router-dom";
 
 function Home() {
@@ -348,7 +349,7 @@ function Home() {
       </div>
       ) : 
       (<div style={{height:"100vh", width:"100%", background:"black", position:"absolute"}}>
-        <div style={{marginTop:"50vh", marginLeft:"47vw"}}></div>
+        <div style={{marginTop:"50vh", marginLeft:"47vw"}}><BarWave1 color="red" height="25px" width="25px" /></div>
 
       </div>)
         }
