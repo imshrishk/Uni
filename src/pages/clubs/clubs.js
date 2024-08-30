@@ -6,7 +6,6 @@ import Testevents from './testevents'
 import ClubPOR from "./ClubPOR";
 import Activities from "./activities";
 import Clubvideo from "./clubvideo";
-import BarWave from "react-cssfx-loading/lib/FillingBottle";
 import { getDocData, getData } from "../../functions/firestore";
 import footer from '../../assets/images/footer.png'
 
@@ -50,8 +49,7 @@ function Clubs() {
       ) : (<>
         <div
           style={{marginTop:"35vh", marginLeft:"47vw"}}
-        >
-        <BarWave color="#FF0000" width="40px" height="40px" /></div>
+        ></div>
       </>)}
 
       <Footer background={footer}/>
