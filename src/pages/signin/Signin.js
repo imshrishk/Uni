@@ -3,7 +3,7 @@ import React from "react";
 import "./signin.css";
 import Gogglesvg from "../../assets/images/Group52.svg";
 import logo from "../../assets/images/Group 51.svg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 export default function Signin() {
   return (
     <div

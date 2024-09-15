@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Hidden } from "@material-ui/core";
+import Hidden from '@mui/material/Hidden';
 import React from "react";
 import "./clubevents.css";
 export default function svg(prop) {

@@ -1,10 +1,8 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Redirect,
-  Switch,
+  Routes,
 } from "react-router-dom";
 import Academic from "./pages/academic/Academic";
 import Home from "./pages/Home/Home";
@@ -21,9 +19,6 @@ import Senates from "./pages/Senates/Senates";
 import Signin from "./pages/signin/Signin";
 import Footer from "./components/Footer/Footer";
 import footer from "./assets/images/footer.png";
-import { Section } from "./assets/home/scroll";
-//import Footer from './components/Footer/Footer'
-//import footer from './assets/images/footer.png'
 import Typing1 from "./assets/home/scroll";
 import TechSenate from "./components/Senates/TechSenate";
 import CultSenate from "./components/Senates/CultSenate";
@@ -33,122 +28,32 @@ import Fests from "./pages/Fests/Fests";
 
 const App = () => {
   return (
-    <>
-      <Router>
-        {/* <Navbar />
-        <div
-          style={{ height: "10vh", width: "100%", background: "white" }}
-        ></div> */}
-        <main>
-          <Switch>
-            <Route exact path="/club">
-            <Navbar />
-              <div
-                style={{ height: "10vh", width: "100%", background: "white" }}
-              ></div>
-              <Clubs />
-            </Route>
-            <Route exact path="/feg">
-            <Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <FegComponent />
-            </Route>
-
-            <Route path="/about" exact  >
-            <Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <About/>
-            </Route>
-            <Route path="/change" exact component={Change} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <Change/>
-            </Route>
-            <Route path="/places" exact component={Places} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <Places/>
-            </Route>
-            <Route path="/studentlife" exact component={Studentlife} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <Studentlife/>
-            </Route>
-            <Route path="/helpandadvice" exact component={HelpAndAdvice} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <HelpAndAdvice/>
-            </Route>
-            <Route path="/contact" exact component={Contact} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <Contact/>
-            </Route>
-            <Route path="/academic" exact component={Academic} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <Academic/>
-            </Route>
-            <Route path="/fests" exact component={Fests} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <Fests/>
-            </Route>
-            <Route path="/techsenate" exact component={TechSenate} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <TechSenate/>
-            </Route>
-            <Route path="/cultsenate" exact component={CultSenate} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <CultSenate/>
-            </Route>
-            <Route path="/sportssenate" exact component={SportsSenate} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <SportsSenate/>
-            </Route>
-            <Route path="/foodoutlets" exact component={FoodOutlets} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <FoodOutlets/>
-            </Route>
-            <Route path="/senates" exact component={Senates} ><Navbar />
-                  <div
-                    style={{ height: "10vh", width: "100%", background: "white" }}
-                  ></div>
-              <Senates/>
-            </Route>
-            
-
-            {/* <Redirect to="/" /> */}
-            <Route exact path="/" component={Home} >
-              
-              <Home/>
-            </Route>
-            <Route exact path="/test" component={Typing1} />
-
-            <Route path="/login" exact component={Signin} ></Route>
-          </Switch>
-        </main>
-      </Router>
-    </>
+    <Router>
+      <Navbar />
+      <div style={{ height: "0vh", width: "100%", background: "white" }}></div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/club" element={<Clubs />} />
+          <Route path="/feg" element={<FegComponent />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/change" element={<Change />} />
+          <Route path="/places" element={<Places />} />
+          <Route path="/studentlife" element={<Studentlife />} />
+          <Route path="/helpandadvice" element={<HelpAndAdvice />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/academic" element={<Academic />} />
+          <Route path="/fests" element={<Fests />} />
+          <Route path="/techsenate" element={<TechSenate />} />
+          <Route path="/cultsenate" element={<CultSenate />} />
+          <Route path="/sportssenate" element={<SportsSenate />} />
+          <Route path="/foodoutlets" element={<FoodOutlets />} />
+          <Route path="/senates" element={<Senates />} />
+          <Route path="/login" element={<Signin />} />
+          <Route path="/test" element={<Typing1 />} />
+        </Routes>
+      </main>
+    </Router>
   );
 };
 

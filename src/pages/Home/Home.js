@@ -28,8 +28,8 @@ import News from "../../assets/home/news";
 import Media from "react-media";
 import Navbar from "../../components/NavbarNew/Navbar";
 import LOGO from '../../assets/home/hero/logo.jpg'
-import BarWave1 from "react-cssfx-loading/lib/FadingBalls";
-import { useHistory } from "react-router-dom";
+import { FadingBalls as BarWave1 } from 'react-cssfx-loading';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -116,7 +116,7 @@ function Home() {
       title: "The heading and heading part2",
     },
   ];
-  const history = useHistory();
+  const history = useNavigate();
   const [loading, setLoading] = useState(history.length <= 2);
   const setSpinner = (x)=>{
     console.log(history.length);

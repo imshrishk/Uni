@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-restricted-globals */
 
-import { red } from "@material-ui/core/colors";
+import { colors } from '@mui/material';
 import React from "react";
 import ReactDOM from "react-dom";
 import Typewriter from "typewriter-effect";

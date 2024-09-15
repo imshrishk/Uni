@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./assocs.module.css";
 import logo from "../../assets/images/LogosSenates/techsenate/logo.jpg";
 import DisplayBox from "./DisplayBox";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Clubs() {
-  const history = useHistory();
+  const history = useNavigate();
   const clubsList = [
     {
       id: 1,

@@ -3,10 +3,10 @@ import "./WelcomeFreshers.css";
 import welfreshersbg from "../../assets/home/WelcomeFreshers/welfreshers.svg";
 import welfreshers from "../../assets/home/WelcomeFreshers/welcome freshers.svg";
 import mobileuiwelcome from "../../assets/home/WelcomeFreshers/mobileui_welcome.svg";
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 
 export default function WelcomeFreshers() {
-  const history = useHistory();
+  const history = useNavigate();
   return (
     <>
       <div className="welcome-freshers">
