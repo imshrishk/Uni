@@ -1,24 +1,10 @@
 /* eslint-disable no-lone-blocks */
 import React from "react";
-import { useState } from "react";
 import image from "./images/clubimage.png";
 import "./clubname.css";
 import { dota } from "./data";
 export default function Clubname({name, about}) {
 
-  const [subscribe, setSubscribe] = useState(false);
-  {
-    var display2 = subscribe ? "block" : "none";
-  }
-  {
-    var display1 = subscribe ? "none" : "block";
-  }
-  const subscribefun = () => {
-    setSubscribe(true);
-  };
-  const notsubscribefun = () => {
-    setSubscribe(false);
-  };
   return (
     <>
       <div>

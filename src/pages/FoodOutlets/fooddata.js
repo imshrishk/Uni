@@ -1,11 +1,4 @@
 import svg1 from "./mask_group_12.png";
-import svg6 from "./mask_group_13.png";
-import svg3 from "./mask_group_14.png";
-import svg2 from "./mask_group_15.png";
-import svg7 from "./mask_group_16.png";
-import svg4 from "./mask_group_17.png";
-import svg8 from "./mask_group_18.png";
-import svg5 from "./mask_group_19.png";
 
 export const fooddata = {
   first: {

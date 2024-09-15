@@ -1,5 +1,3 @@
-import Svg from "./svg";
-import { PorHolders } from "./data";
 import "../Feg/Feg.css";
 import { useEffect } from "react";
 export default function ClubPOR({pors}) {

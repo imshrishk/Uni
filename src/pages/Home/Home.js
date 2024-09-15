@@ -128,7 +128,7 @@ function Home() {
 
   useEffect(() => {
     setTimeout(() => setSpinner(false), 3000)
-  }, []);
+  }, [setSpinner]);
 
   return (
     <div>
