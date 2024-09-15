@@ -21,7 +21,7 @@
     "react-awesome-reveal": "^4.2.14",
     "react-cssfx-loading": "^2.1.0",
     "react-dom": "^18.3.1",
-    "react-media": "^2.0.0",
+    "react-media": "^1.8.0",
     "react-router-dom": "^6.26.1",
     "react-scripts": "^5.0.1",
     "react-scroll": "^2.0.0",
